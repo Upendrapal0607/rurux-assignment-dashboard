@@ -3,10 +3,13 @@
 ## Introduction
 Streamline student dashboard management with this platform. Effortlessly organize dashboard by admin side, saving you valuable time. Quickly login to get see your all collage details here. Efficiently by adding multiple users to a single admin. Get things done efficiently with this app.
 ### Home Page 
+![Screenshot 2024-05-11 112823](https://github.com/Upendrapal0607/rurux-assignment-dashboard/assets/112810287/33621a9b-58be-4a56-89d5-d1db98c6809b)
 
 ### Login page
+![Screenshot 2024-05-11 112909](https://github.com/Upendrapal0607/rurux-assignment-dashboard/assets/112810287/d8f4c8d3-0c07-40d3-a1da-47a8f620532e)
 
-### Task Page 
+### Dashboard Page 
+![Screenshot 2024-05-11 112851](https://github.com/Upendrapal0607/rurux-assignment-dashboard/assets/112810287/00d7ef71-40ec-4f8d-81f6-dac67b7033cd)
 
 
 ## Project Type
