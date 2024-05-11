@@ -18,7 +18,7 @@ export const Subject = ({ stream = []}) => {
   const FetchSubjectData = async () => {
     await dispatch(GetAllSubject())
       .then((res) => {
-       
+       console.log({result: res});
       })
       .catch((err) => {
         console.log({ err });
@@ -53,6 +53,7 @@ export const Subject = ({ stream = []}) => {
 
     dispatch(AddSubject(addebleSubject))
       .then((res) => {
+        console.log({result: res});
         if (res.message == "new subject added") {
           FetchSubjectData();
           setSubjectValue("");

@@ -10,7 +10,7 @@ import {
   SUBJECT_SUCCESS,
 } from "./ActionType";
 import axios from "axios";
-const url = "http://localhost:8080/"
+const url = "https://rurux-university-dashboard-backend.vercel.app/"
 let token = JSON.parse(localStorage.getItem("AdminToken")) || "";
 
 export const AdminLogin = (payload) => async (dispatch) => {

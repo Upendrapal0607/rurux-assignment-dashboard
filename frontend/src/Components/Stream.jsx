@@ -14,6 +14,7 @@ export const Stream = ({ data = [], DashboardStreamData, isLoading }) => {
   const HandleDelete = (id) => {
     dispatch(DeleteStream(id))
       .then((res) => {
+ 
         if (res.message == "stream has been deleted") {
           DashboardStreamData();
         }

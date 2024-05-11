@@ -4,7 +4,7 @@ import {
   GET_ALL_STUDENT_REQUEST_SUCCESS,
   REGISTER_REQUEST_FAIL,
 } from "./ActionType";
-const url = "http://localhost:8080/";
+const url = "https://rurux-university-dashboard-backend.vercel.app/";
 let token = JSON.parse(localStorage.getItem("AdminToken")) || "";
 export const getAllStudentList = () => async (dispatch) => {
   try {
@@ -28,7 +28,7 @@ export const AddNewStudent = (payload) => async (dispatch) => {
     const res = await axios.post(`${url}student/register/`, payload, {
       headers: { Authorization: token },
     });
-  
+  console.log({result:res});
     return res.data;
   } catch (error) {
     dispatch({ type: REGISTER_REQUEST_FAIL });

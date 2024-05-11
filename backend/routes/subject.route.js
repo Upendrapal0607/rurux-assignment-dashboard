@@ -16,7 +16,7 @@ subjectRoute.get("/", async (req, res) => {
     res.status(400).json({ message: "error",error });
   }
 });
-subjectRoute.post("/addsubject", async (req, res) => {
+subjectRoute.post("/", async (req, res) => {
   const data = req.body;
   console.log({ data });
   try {
@@ -44,10 +44,10 @@ subjectRoute.patch("/update/:paramId", async (req, res) => {
     console.log({checkSubject});
     if (checkSubject) {
         await subjectModel.findByIdAndUpdate({ _id: paramId }, req.body);
-        res.status(200).json({ msg: `subject has been updated` });
+        res.status(200).json({ message: `subject has been updated` });
       }
       else {
-       res.status(200).json({ messag: "Subject is not found" });
+       res.status(200).json({ message: "Subject is not found" });
      }
     }
 
@@ -62,7 +62,7 @@ subjectRoute.delete("/delete/:paramId", async (req, res) => {
     const checkSubject = await subjectModel.findOne({ _id: paramId });
     if (checkSubject) {
         await subjectModel.findByIdAndDelete({ _id: paramId });
-        res.status(200).json({ messag: `subject has been deleted` });
+        res.status(200).json({ message: `subject has been deleted` });
       } else {
         res.status(200).json({ msg: `subject not found` });
       }

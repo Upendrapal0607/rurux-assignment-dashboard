@@ -18,10 +18,10 @@ studentRoute.get("/", async (req, res) => {
 
 studentRoute.post("/register", async (req, res) => {
   const studentData = req.body;
-  console.log({ studentData });
+
   try {
     const AlraidyExitst = await studentModel.findOne({ username: studentData.username});
-    console.log({AlraidyExitst});
+   
     if (AlraidyExitst) {
       res.status(200).json({
         message: `student whose username is ${studentData.username} alraiday resistered`,

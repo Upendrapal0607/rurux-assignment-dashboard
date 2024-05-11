@@ -6,6 +6,7 @@ import { Button, useToast } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { AddNewStudent } from "../Redux/StudenReducer/Action";
 export const StudentSignUp = ({ stream, getAllStudent }) => {
+
   const toast = useToast();
   const data = useSelector((state) => state.studentReducer);
   const navigate = useNavigate();
